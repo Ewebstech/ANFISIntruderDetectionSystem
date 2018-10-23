@@ -32,5 +32,8 @@ if(strcompare > 0)
     [coeff, new_X, latent, X, out_fis,error,chkError,Data,CI,Attack_Traffic] = probing(Failed_Login,UsePCA);
 end
 
-
+Original_DataSet = X
+if(UsePCA == 1)
+    PCA_Dataset = new_X
+end
 
